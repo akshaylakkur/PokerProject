@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;  
 
 public class Deck { // deck class, the whole 52 deck of cards and all operations with them rely on this  class
 
@@ -25,9 +26,9 @@ public class Deck { // deck class, the whole 52 deck of cards and all operations
         new Card(10, "Spades"), new Card("Jack", "Spades"), new Card("Queen", "Spades"), // copy array to arraylist when game starts (acts as refresh) then shuffles the deck
         new Card("King", "Spades"), new Card("Ace", "Spades")
     };
-
+                      
     int currentIndex;
-    List<Card> deck = new ArrayList<Card>(); 
+    List<Card> deck = new ArrayList<Card>();                  
 
     public Deck() {
         currentIndex = 0;
@@ -49,8 +50,22 @@ public class Deck { // deck class, the whole 52 deck of cards and all operations
     }
 
     public void shuffleDeck() {
-        Collections.shuffle(deck);
+        Collections.shuffle(deck);  
     }
+    
+    public ArrayList<Card> getDeck(){
+        return deck;
+    }
+
+    public  
+         
+
+    public static void main (String[] args){
+        Deck d = new deck(); 
+        for (Card card : d.getDeck()){
+            System.out.println(Card.toString());  
+        }
+    }               
 
 }
 
