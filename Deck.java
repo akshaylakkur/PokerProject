@@ -57,7 +57,6 @@ public class Deck { // deck class, the whole 52 deck of cards and all operations
         return deck;
     }
          
-
     public static void main (String[] args){
         Deck d = new Deck(); 
         for (Card card : d.getDeck()){
