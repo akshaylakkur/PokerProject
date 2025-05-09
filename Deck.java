@@ -28,7 +28,7 @@ public class Deck { // deck class, the whole 52 deck of cards and all operations
     };
                       
     int currentIndex;
-    List<Card> deck = new ArrayList<Card>();                  
+    ArrayList<Card> deck = new ArrayList<Card>();                  
 
     public Deck() {
         currentIndex = 0;
@@ -56,14 +56,12 @@ public class Deck { // deck class, the whole 52 deck of cards and all operations
     public ArrayList<Card> getDeck(){
         return deck;
     }
-
-    public  
          
 
     public static void main (String[] args){
-        Deck d = new deck(); 
+        Deck d = new Deck(); 
         for (Card card : d.getDeck()){
-            System.out.println(Card.toString());  
+            System.out.println(card.toString());  
         }
     }               
 
