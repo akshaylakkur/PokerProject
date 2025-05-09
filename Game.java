@@ -1,7 +1,13 @@
+import java.util.ArrayList;
+
 public class Game{
-  public static void main (String[] args){
-    System.out.println("Hi");
+    
+  private ArrayList<Player> players;
+  public Game(){
+    players = null;
   }
 
-
+  private void addPlayers(Player p){
+    players.add(p);
+  }
 }
