@@ -7,7 +7,8 @@ public class Game{
     players = null;
   }
 
-  private void addPlayers(Player p){
+  private void addPlayers(String name){
+    Player p = new Player(name);
     players.add(p);
   }
 }
