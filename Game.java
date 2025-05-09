@@ -27,7 +27,8 @@ public class Game{
     return amt;
   }
   private int fold(String name){
-    
+    players.remove(name);
+    return amount.get(name);
   }
 
 
